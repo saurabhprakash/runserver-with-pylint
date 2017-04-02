@@ -6,7 +6,7 @@ Run Django Runserver with Pylint
 
 ### How it works
 * In you root directory of codebase where manage.py is present add the "pylintrc" file, This file can be modified as per requirements
-* In one of you django apps, add "runserver_with_pylint.py" file on location "<your app name>/management/commands/runserver_with_pylint.py", make sure this app is present in installed apps.
+* In one of you django apps, add "runserver_with_pylint.py" file on location "[your app name]/management/commands/runserver_with_pylint.py", make sure this app is present in installed apps.
 * In above mentioned file(runserver_with_pylint.py), set your required standards by modifying these set of variables: ERROR_COUNT, CONVENTION_COUNT, WARNINGS, CODEBASE, THRESHOLD_LINT_SCORE
 * To use this run you django server as "python manage.py runserver_with_pylint" instead of "python manage.py runserver"
 
