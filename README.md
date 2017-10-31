@@ -6,6 +6,7 @@ Run Django Runserver with Pylint
 
 ### How it works
 * Use ./install.sh to install the runserver hook (All settings are present in this file)
+* ERROR_COUNT, CONVENTION_COUNT, WARNINGS, CODEBASE, THRESHOLD_LINT_SCORE : These counts/score needs to be modified based on requirement.
 * The script creates a file "manage_pylint.py" inside the CODEBASE directory and creates an __init__.py in order for pylint to run. (These could be added to gitignore)
 * To use this run you django server as "python manage_pylint.py runserver" instead of "python manage.py runserver"
 
